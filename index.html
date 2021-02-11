@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>
+            My Family Book
+        </title>
+    </head>
+    <body>
+        <script>
+            var member_images = [
+                "https://th.bing.com/th/id/OIP.VntSPje5tbxlGw4abU04dAAAAA?pid=Api&rs=1",
+                "https://th.bing.com/th/id/R0254e598a18eadae06173ffaf7bc31d7?rik=PfrJ9iWoYHE%2f4A&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f160-1604060_cartoon-mom-png-cartoon-mother-clipart.png&ehk=HRBuu%2bqWRmpUN65j6fjN3MmBhRV0bQSur91C%2fzZ%2bM1U%3d&risl=&pid=ImgRaw",
+                "https://st2.depositphotos.com/2945617/9989/v/450/depositphotos_99899122-stock-illustration-happy-cute-girl-cartoon.jpg",
+                "https://th.bing.com/th/id/R8272b72d9ed11e71857896b91c05385b?rik=%2bPlIWhK4u36f1g&riu=http%3a%2f%2fmedia.istockphoto.com%2fvectors%2fcute-boy-go-to-school-vector-id656898102%3fk%3d6%26m%3d656898102%26s%3d612x612%26w%3d0%26h%3dKPTpLQjTbhknyrZ8bPcxSVIjMpxKpxfCQ-TfUbDhSrA%3d&ehk=TCHrjgvGgZJMQhAIyM2Tz0tP%2f0QU4nED1SlfdxwcJxI%3d&risl=&pid=ImgRaw"
+            ];
+            var member_name = [
+                "Vindumadhav Shukla",
+                "Aarti Shukla",
+                "Vedika Shukla",
+                "Aaryan Shukla"
+            ];
+            var member_count = 0;
+            function family_member() {
+                member_count++;
+                document.getElementById("member_image").src = member_images[member_count];
+                document.getElementById("member_name").innerHTML = member_name[member_count];
+                if (member_count > 4) {
+                    member_count = 0;
+                    document.getElementById("member_image").src = "https://th.bing.com/th/id/OIP.VntSPje5tbxlGw4abU04dAAAAA?pid=Api&rs=1";
+                    document.getElementById("member_name").innerHTML = "Vindumadhav Shukla";
+                }
+            }
+        </script>
+        <h1>My Family Book</h1>
+        <img id="member_image" src="https://th.bing.com/th/id/OIP.VntSPje5tbxlGw4abU04dAAAAA?pid=Api&rs=1"> 
+        <h2 id="member_name">Vindumadhav Shukla</h2>   
+</body>
+</html>

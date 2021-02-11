@@ -1,0 +1,10 @@
+body {
+    background-color: khaki;
+    text-align: center;
+}
+img {
+    border-width: 13px;
+    border-radius: 20px;
+    border: rgb(243, 255, 138);
+    padding: 30;
+}
